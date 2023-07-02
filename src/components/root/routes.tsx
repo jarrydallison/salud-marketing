@@ -1,6 +1,18 @@
 import { Navigate, RouteObject } from "react-router-dom";
-import { HOME_VIEW } from "../../consts";
-import { AppLayout, HomeView, RootView } from "../views";
+import {
+  ABOUT_VIEW,
+  HOME_VIEW,
+  MARKETPLACE_VIEW,
+  TEAM_VIEW,
+} from "../../consts";
+import {
+  AboutView,
+  AppLayout,
+  HomeView,
+  MarketplaceView,
+  RootView,
+  TeamView,
+} from "../views";
 
 export const routes: () => RouteObject[] = () => [
   {
@@ -18,6 +30,18 @@ export const routes: () => RouteObject[] = () => [
           {
             path: HOME_VIEW,
             element: <HomeView />,
+          },
+          {
+            path: ABOUT_VIEW,
+            element: <AboutView />,
+          },
+          {
+            path: TEAM_VIEW,
+            element: <TeamView />,
+          },
+          {
+            path: MARKETPLACE_VIEW,
+            element: <MarketplaceView />,
           },
         ],
       },

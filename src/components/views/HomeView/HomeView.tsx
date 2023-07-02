@@ -3,11 +3,15 @@ import { Button, Heading } from "../../common";
 
 export const HomeView = () => (
   <div className="px-20">
-    <div className="m-auto flex w-full gap-x-12 rounded-xl bg-homecard p-20 drop-shadow-2xl">
+    <div className="m-auto flex w-full gap-x-14 rounded-xl bg-homecard p-20 drop-shadow-2xl">
       <section className="flex flex-col items-center justify-center">
-        <Heading as="h1">Welcome</Heading>
-        <p>Sustained Health Starts Here</p>
-        <div>
+        <Heading as="h1" className="text-homeText">
+          Welcome
+        </Heading>
+        <p className="text-center font-subheader text-xl tracking-wide text-homeText lg:text-xl">
+          Sustained Health Starts Here
+        </p>
+        <div className="mt-6 flex gap-4">
           <Button onClick={() => alert("Not yet implemented")}>
             Create Account
           </Button>
@@ -18,6 +22,27 @@ export const HomeView = () => (
     </div>
   </div>
 );
+
+/* Sustained Health Starts Here */
+
+// position: absolute;
+// width: 423.39px;
+// height: 38px;
+// left: 240.06px;
+// top: 451px;
+
+// font-family: 'Outfit';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 30px;
+// line-height: 38px;
+// /* identical to box height */
+// display: flex;
+// align-items: center;
+// text-align: center;
+// letter-spacing: 0.05em;
+
+// color: #1C7635;
 
 // TODO: Incorporate actual styling into Home Card Design
 

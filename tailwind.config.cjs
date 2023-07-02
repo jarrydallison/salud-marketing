@@ -15,6 +15,7 @@ export default {
       },
       fontFamily: {
         nav: "Titillium Web",
+        subheader: "Outfit",
       },
       textColor: {
         nav: "#C6FFD6",
@@ -22,9 +23,11 @@ export default {
       colors: {
         background: "#41DF09",
         homecard: "rgba(255, 254, 254, 0.72)",
+        homeText: "#1C7635",
       },
       maxWidth: {
         app: "68rem", // 1094px
+        card: "20rem",
       },
     },
   },
